@@ -2,7 +2,7 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, logo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  website_url,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -24,8 +25,11 @@ const ProjectCard = ({
           speed: 450,
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[230px] cursor-pointer hover:opacity-80 transition-all"
+        onClick={() => window.open(website_url, "_blank")}
+        >
           <img
             src={image}
             alt={name}
@@ -34,14 +38,14 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              onClick={() => window.opem(source_code_link, "_blank")}
+              
             >
-              <img src={github} alt="github"  className="w-1/2 h-1/2 object-contain"/>
+              <img src={logo} alt="github"  className="w-1/2 h-1/2 object-contain"/>
               
             </div>
             <div
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              onClick={() => window.opem(source_code_link, "_blank")}
+              onClick={() => window.open(source_code_link, "_blank")}
             >
               <img src={github} alt="github"  className="w-1/2 h-1/2 object-contain"/>
               

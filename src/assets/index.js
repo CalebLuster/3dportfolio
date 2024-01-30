@@ -21,14 +21,15 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import ccc from "./company/creative-cuisine-logo.png";
+import voces from "./company/voces.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import voces_logo from "./voces_logo.png";
+import devtube from "./devtube.png";
+import logoSL from "./logoSL.png";
+import chatGTP from "./chatGTP.png";
+import dbdsma from "./dbdlogo.png";
+import burritologo from "./burritologo.png";
 
 export {
   logo,
@@ -52,11 +53,12 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  voces,
+  ccc,
+  voces_logo,
+  devtube,
+  logoSL,
+  chatGTP,
+  dbdsma,
+  burritologo,
 };
